@@ -43,6 +43,12 @@ a {
     color: #ffc300;
 }
 
+.menu-btn {
+    color: white;
+    font-size: 1.5rem;
+    display: none;
+}
+
 /* Will use thses in future */
 #main-header nav ul {
     /* display: grid;
@@ -53,6 +59,19 @@ a {
     text-align: center; */
 }
 
-#main-header nav ul li a {
-    /* text-decoration: none; */
+
+/* Responsive design */
+
+@media (max-width: 30rem) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    #main-header nav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
 }

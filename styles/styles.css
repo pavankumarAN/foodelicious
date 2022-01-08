@@ -54,3 +54,16 @@ main h1 {
 .btn:hover, .btn:active {
     background-color: #ffa900;
 }
+
+
+/* Responsive design */
+
+@media (max-width: 48rem) {
+    .items-list ul {
+        grid-template-columns: 1fr;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+}
