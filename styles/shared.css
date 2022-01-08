@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: rgb(25, 21, 24);
-    padding: 0 20px;
+    padding: 0 1.5rem;
 }
 
 a {
@@ -19,7 +19,7 @@ a {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #ff8800;
@@ -31,12 +31,12 @@ a {
 }
 
 #main-header nav ul li {
-    padding: 0 16px;
+    padding: 0 1rem;
 }
 
 #main-header nav ul li a {
     color: #ffa200;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 #main-header nav ul li a:hover, #main-header nav ul li a:active {
