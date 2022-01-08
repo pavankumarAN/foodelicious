@@ -1,0 +1,58 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(44, 40, 35);
+}
+
+#main-header {
+    /* display: grid; */
+    /* grid-template-columns: 80% 20%; */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(25, 21, 24);
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff8800;
+}
+
+#main-header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#main-header nav ul li {
+    padding: 0 16px;
+}
+
+#main-header nav ul li a {
+    color: #ffa200;
+    font-size: 20px;
+}
+
+#main-header nav ul li a:hover, #main-header nav ul li a:active {
+    color: #ffc300;
+}
+
+/* Will use thses in future */
+#main-header nav ul {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+
+#main-header nav ul li a {
+    /* text-decoration: none; */
+}
