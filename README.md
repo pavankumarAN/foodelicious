@@ -1,3 +1,3 @@
 Please watch live at
 
-https://pavankumaran.github.io/foodelicious/
+https://foodelicious.vercel.app/
