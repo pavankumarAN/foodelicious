@@ -102,11 +102,13 @@ a {
 
     .menu-btn {
         display: flex;
+        outline: none;
     }
 
     .cancel-btn {
         display: flex;
         justify-content: flex-end;
         padding: 10px 10px 0;
+        outline: none;
     }
 }
