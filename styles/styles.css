@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+main {
+    padding-bottom: 20px;
+}
+
 main h1 {
     color: #ff8800;
     text-align: center;
@@ -63,6 +67,10 @@ main h1 {
 /* Responsive design */
 
 @media (max-width: 48rem) {
+    main {
+        padding-bottom: 20px;
+    }
+
     .items-list ul {
         grid-template-columns: 1fr;
     }
