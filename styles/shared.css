@@ -4,14 +4,12 @@ body {
 }
 
 #main-header {
-    /* display: grid; */
-    /* grid-template-columns: 80% 20%; */
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(25, 21, 24);
-    padding: 0 20px;
+    padding: 0 1.5rem;
 }
 
 a {
@@ -19,7 +17,7 @@ a {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #ff8800;
@@ -31,28 +29,84 @@ a {
 }
 
 #main-header nav ul li {
-    padding: 0 16px;
+    padding: 0 1rem;
 }
 
 #main-header nav ul li a {
     color: #ffa200;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 #main-header nav ul li a:hover, #main-header nav ul li a:active {
     color: #ffc300;
 }
 
-/* Will use thses in future */
-#main-header nav ul {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
+.menu-btn {
+    color: white;
+    font-size: 1.5rem;
+    display: none;
 }
 
-#main-header nav ul li a {
-    /* text-decoration: none; */
+#side-nav {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(29, 26, 27);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#side-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#side-nav li {
+    margin: 1rem 0;
+}
+
+#side-nav a {
+    color: rgb(253, 239, 213);
+    font-size: 2rem;
+}
+
+#side-nav:target {
+    display: block;
+}
+
+.cancel-btn {
+    color: white;
+    font-size: 1.5rem;
+    display: none;
+}
+
+/* Responsive design */
+
+@media (max-width: 30rem) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    #main-header nav {
+        display: none;
+    }
+
+    #main-header nav ul li {
+        text-align: center;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .cancel-btn {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 10px 0;
+    }
 }

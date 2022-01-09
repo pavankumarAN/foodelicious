@@ -7,8 +7,8 @@
 main h1 {
     color: #ff8800;
     text-align: center;
-    font-size: 48px;
-    padding: 28px 0;
+    font-size: 3rem;
+    padding: 1.5rem 0;
 }
 
 .items-list {
@@ -19,7 +19,7 @@ main h1 {
 .items-list ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 1rem;
     list-style: none;
 }
 
@@ -30,27 +30,44 @@ main h1 {
 }
 
 .item img {
-    height: 250px;
+    height: 15rem;
     width: 100%;
     object-fit: cover;
 }
 
+.item h2 {
+    margin: 0 0 1rem 0;
+}
+
 .item-content {
-    padding: 15px;
+    padding: 1rem;
     text-align: center;
 }
 
 .item-content * {
-    margin: 15px 0;
+    margin: 1rem 0;
 }
 
 .btn {
     background-color: #ffa200;
     color: white;
-    padding: 8px 24px;
+    padding: 0.5rem 2rem;
     border-radius: 4px;
 }
 
 .btn:hover, .btn:active {
     background-color: #ffa900;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 48rem) {
+    .items-list ul {
+        grid-template-columns: 1fr;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
 }
